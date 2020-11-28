@@ -1,0 +1,247 @@
+#header .topbar {
+  background-color: #323232;
+  font-size: .9em;
+}
+
+#header .topbar li {
+  padding: 10px 8px;
+}
+
+#header .topbar i {
+  color: #fff;
+}
+
+#header .topbar a {
+  color: #fff;
+}
+
+#header .topbar .topbar-left ul li a {
+  -webkit-transition: color 1s ease-in-out;
+  transition: color 1s ease-in-out;
+}
+
+#header .topbar .topbar-left ul li:hover a {
+  color: crimson;
+}
+
+#header .topbar-right ul li:first-child i:hover {
+  color: #fff;
+}
+
+#header .topbar-right ul li i {
+  -webkit-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+}
+
+#header .topbar-right ul li i:hover {
+  color: crimson;
+}
+
+/*Menu*/
+.menu .middle-menu {
+  position: relative;
+}
+
+.menu .nav-bar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu .nav-bar ul li {
+  padding: 20px 15px;
+}
+
+.menu .nav-bar ul li a {
+  color: #000;
+}
+
+.menu .nav-bar ul li a i {
+  font-size: .6em;
+}
+
+.menu .nav-bar ul li a.btnAddCar {
+  background: crimson;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 0;
+}
+
+.menu .nav-bar ul li a.btnAddCar:hover {
+  background: #000;
+}
+
+.menu .nav-bar ul li.bigMenu {
+  position: static !important;
+}
+
+.menu .nav-bar ul li.bigMenu .LiDropDown {
+  width: 100% !important;
+  padding: 20px 0;
+}
+
+.menu .nav-bar ul li.bigMenu .LiDropDown ul {
+  padding: 0;
+  margin: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.menu .nav-bar ul li.bigMenu .LiDropDown ul li {
+  padding: 15px 0;
+}
+
+.menu .nav-bar ul li.LiDropped, .menu .nav-bar ul li.bigMenu {
+  position: relative;
+}
+
+.menu .nav-bar ul li.LiDropped:hover > .LiDropDown, .menu .nav-bar ul li.bigMenu:hover > .LiDropDown {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.menu .nav-bar ul li.LiDropped .LiDropDown, .menu .nav-bar ul li.bigMenu .LiDropDown {
+  background: #fff;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 150px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.menu .nav-bar ul li.LiDropped .LiDropDown.LiRightDr, .menu .nav-bar ul li.bigMenu .LiDropDown.LiRightDr {
+  top: 0;
+  left: 100%;
+}
+
+.menu .nav-bar ul li.LiDropped .LiDropDown a, .menu .nav-bar ul li.bigMenu .LiDropDown a {
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  padding: 5px;
+}
+
+.menu .nav-bar ul li.LiDropped .LiDropDown a:hover, .menu .nav-bar ul li.bigMenu .LiDropDown a:hover {
+  color: crimson;
+}
+
+.menu .nav-bar ul li.LiDropped .LiDropDown::after, .menu .nav-bar ul li.bigMenu .LiDropDown::after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0%;
+  width: 100%;
+  height: 4px;
+  background: crimson;
+}
+
+.menu .nav-bar ul li.LiDropped .LiDropDown li, .menu .nav-bar ul li.bigMenu .LiDropDown li {
+  padding: 8px;
+}
+
+.menu-mobile #ico-rem {
+  display: none;
+}
+
+.menu-mobile .mobile-down-menu {
+  display: none;
+}
+
+/*Menu end*/
+body {
+  background: chocolate;
+}
+
+.slider1 .sld {
+  overflow: hidden;
+}
+
+.slider1 .slide-img2 {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-28);
+          transform: translateY(-28);
+  width: 100%;
+  left: -5%;
+  display: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.slider1 .slider-img {
+  opacity: 0;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: .7 ease-in-out;
+  transition: .7 ease-in-out;
+  position: relative;
+}
+
+.slider1 .slider-img.slide-active {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.slider1 .slider-img.slide-active .slide-img2 {
+  opacity: 1;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.menu-mobile .mobile-down-menu .set .content {
+  display: none;
+}
+
+.menu-mobile .mobile-down-menu .set a {
+  padding: 10px;
+  color: #000;
+  display: block;
+}
+
+.menu-mobile .mobile-down-menu .set ul {
+  list-style: none;
+  padding: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  background: chocolate;
+}
+
+#slider1 .slide-img2 {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
+  width: 100%;
+  left: 0%;
+}
+
+#slider1 .slider-img {
+  opacity: 0;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: .7s ease-in-out;
+  transition: .7s ease-in-out;
+  position: relative;
+}
+
+#slider1 .slider-img.slide-active {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+/*# sourceMappingURL=style.css.map */
