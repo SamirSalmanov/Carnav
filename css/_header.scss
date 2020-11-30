@@ -1,4 +1,7 @@
 #header{
+    position: relative;
+    background: $white;
+    z-index: 25;
     .topbar{
     background-color: #323232;
 
@@ -105,6 +108,8 @@
                         .LiDropDown{
                             background: $white;
                             position: absolute;
+                            z-index: 5;
+                            background: $white;
                             left: 0;
                             top: 100%;
                          

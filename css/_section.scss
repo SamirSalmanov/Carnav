@@ -1,17 +1,67 @@
 // Section //
-body{
-    background: chocolate;
-}
-.slider1{
+
+#slider1{
+    background: url(../logo/wp.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    .slider-item{
+        a{
+            transition: color .3s ease-in-out;
+          &:hover{
+              background: $crimson;
+            }
+        }   
+        
+ 
+        .myLogo{
+            position: absolute;
+            left: 60%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            width: 30%;
+            img{
+                width: 50%;
+            }
+
+        // background-position: center;
+        // background-size: cover;
+        // &:nth-child(1){
+        //     background-image: url(../logo/wp.jpg );
+        // }
+        // &:nth-child(2){
+        //     background-image: url(../logo/rwp.jpg);
+        // }
+        display: none;
+        &.sld-active{
+            display: block;
+        }
+    }
+    .slide-ico{
+        .ico-prev,.ico-next{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #fff;
+            cursor: pointer;
+            z-index: 5;
+            font-size: 1.5em;
+        }
+        .ico-prev{
+            left: 15px;
+        }
+        .ico-next{
+            right: 15px;
+        }
+    }
     .sld{
         overflow: hidden;
     }
     .slide-img2{
         position: absolute;
         top: 50%;
-        transform: translateY(-28);
+        transform: translateY(-25%);
         width: 100%;
-        left: -5%;
+        left: 0%;
         display: none;
         transition: .5s ;
     }
@@ -29,6 +79,7 @@ body{
         }
 
     }
+}
 }
 
 // Section  end //
